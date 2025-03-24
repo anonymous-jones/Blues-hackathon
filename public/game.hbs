@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock Simulator</title>
+        <link rel="icon" type="image/x-icon" href="faviction.png">
+        <link href="game.css" rel="stylesheet">
+    </head>
+    <body>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+        </script>
+        <h1>Hello {{user}}</h1>
+        <p id="warning" style="text-align: center; color: red;"></p>
+        <div class = "money-wrap">
+        <span><p>Current Money:</p><p id="money">500</p></span>
+        <span><p>Current Net-Worth:</p><p id="net-worth">500</p></span>
+        </div>
+        <div name="stocks" id="stocks"></div>
+        <form id="save" method="POST" action="/save">
+            <input type="hidden" name="money">
+            <input type="submit" value="save" id="save-button">
+        </form>
+        <script src="game.js"></script>
+    </body>
+</html>

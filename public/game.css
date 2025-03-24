@@ -1,0 +1,130 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background-image: url(backgroundGame.avif);*/
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(103, 99, 200, 0.979) 100%);
+    background-color: rgba(103, 99, 200, 0.979);
+}
+form {
+    text-align: center;
+    size: 20cm;
+}
+.nav-bar{
+    color: rgba(0, 0, 0, 0);
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-size: 30px;
+    font-style: calc(30px);
+}
+
+
+.stock {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,1);
+    transition: 0.3s;
+    width: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: white;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+.stock:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+  
+  /* Add some padding inside the card container */
+#stocks {
+    padding: 3px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+img {
+    height: 100px;
+    float: center;
+}
+.buy {
+    background-color: #77e17b;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    text-decoration: bold;
+    transition-duration: 0.4s;
+}
+.buySsell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sell {
+    background-color: rgb(220, 104, 96);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+.buy:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+
+.sell:hover {
+    box-shadow: 2px 2px 2px black;
+}
+.sellAll {
+    background-color: rgb(220, 104, 96);
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align:center;
+   
+}
+
+.sellAll:hover{
+    box-shadow: 2px 2px 2px black;
+}
+
+.money-wrap {
+    position: relative;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    
+    background: #ecf0f1;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px;
+    
+    &:after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+    
+  }
+  #save-button {
+    margin-top: 2%;
+    font-size: 40px;
+    background-color: white;
+  }
+  #save-button:hover {
+    box-shadow: 2px 2px 2px black;
+  }
+  .almount {
+    text-align: center;
+  }
